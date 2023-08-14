@@ -4,7 +4,8 @@
 @import
   './utils/variables',
   './utils/functions',
-  './utils/mixins';
+  './utils/mixins-keyframes',
+  './utils/mixins-background';
 
 // 2. Vendors
 
@@ -23,7 +24,8 @@
 
 // 5. Composants
 @import
-  './components/button';
+  './components/button',
+  './components/custom-scrollbar';
 
 // 6. Styles spécifiques à la page
 @import

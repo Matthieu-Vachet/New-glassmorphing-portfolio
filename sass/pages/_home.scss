@@ -1,3 +1,35 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient des styles spécifiques à la page d'accueil.
 // -----------------------------------------------------------------------------
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  &.fade-out {
+    opacity: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+  
+  .sec-padding {
+    padding: 80px 0;
+  }
+  
+  .flex-end {
+    justify-content: flex-end;
+  }
+}

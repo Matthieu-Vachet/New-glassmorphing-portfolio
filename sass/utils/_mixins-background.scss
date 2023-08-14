@@ -1,0 +1,6 @@
+@mixin background-main{
+    background-image: linear-gradient(
+    to bottom right,
+    $pink-light,
+    $cyan-light
+)}
