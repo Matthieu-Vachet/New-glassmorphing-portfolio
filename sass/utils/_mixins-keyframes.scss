@@ -23,3 +23,37 @@
         }
       }
 }
+
+@mixin zoomInOut {
+  @keyframes zoomInOut {
+    0%,
+    100% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+}
+
+@mixin bounceTop {
+  @keyframes bounceTop {
+    0%, 100% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin spin {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
