@@ -262,6 +262,53 @@ table {
   border-spacing: 0;
 }
 
+/* Buttons */
+button {
+  font-family: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.btn {
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 28px;
+  display: inline-block;
+  border-radius: 30px;
+  color: #e02f6b;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #e02f6b;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+.btn:hover::before {
+  width: 100%;
+}
+.btn:hover {
+  color: #fff;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
