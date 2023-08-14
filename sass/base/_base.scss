@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient des styles très basiques.
+// -----------------------------------------------------------------------------
+
+/**
+ * Configurer un modèle de boîte décent sur l'élément racine
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Faire en sorte que tous les éléments du DOM héritent du box-sizing parent
+ * Puisque `*` a une spécificité de 0, il ne remplace pas la valeur `html`
+ * faire en sorte que tous les éléments héritent de la valeur root box-sizing
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Styles de base pour les liens
+ */
+///a {
+///  color: $brand-color;
+///  text-decoration: none;
+
+///  @include on-event {
+///    color: $text-color;
+///    text-decoration: underline;
+///  }
+///}

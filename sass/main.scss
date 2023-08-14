@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// 1. Configuration et aides
+@import
+  './utils/variables',
+  './utils/functions',
+  './utils/mixins';
+
+// 2. Vendors
+
+
+// 3. Trucs de base
+@import
+  './base/base',
+  './base/fonts',
+  './base/typography',
+  './base/reset';
+
+// 4. Sections liées à la mise en page
+@import
+  './layout/header',
+  './layout/footer';
+
+// 5. Composants
+@import
+  './components/button';
+
+// 6. Styles spécifiques à la page
+@import
+  './pages/home';
+
+// 7. Themes
+@import
+  './themes/default';
