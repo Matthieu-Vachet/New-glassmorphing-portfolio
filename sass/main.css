@@ -709,7 +709,7 @@ button {
   position: absolute;
   border-radius: 50%;
 }
-.bg-circles.circle-1 {
+.bg-circles .circle-1 {
   width: 60px;
   height: 60px;
   background-color: #0000ff;
@@ -726,7 +726,7 @@ button {
     transform: scale(1);
   }
 }
-.bg-circles.circle-2 {
+.bg-circles .circle-2 {
   height: 80px;
   width: 80px;
   background-color: #e02f6b;
@@ -743,7 +743,7 @@ button {
     transform: translateY(0);
   }
 }
-.bg-circles.circle-3 {
+.bg-circles .circle-3 {
   height: 120px;
   width: 120px;
   background-color: #fff;
@@ -751,7 +751,7 @@ button {
   right: -60px;
   opacity: 0.6;
 }
-.bg-circles.circle-4 {
+.bg-circles .circle-4 {
   height: 50px;
   width: 50px;
   background-color: #ffa500;
