@@ -20,7 +20,9 @@
 // 4. Sections liées à la mise en page
 @import
   './layout/header',
-  './layout/footer';
+  './layout/footer',
+  './layout/overlay',
+  './layout/page-loader';
 
 // 5. Composants
 @import

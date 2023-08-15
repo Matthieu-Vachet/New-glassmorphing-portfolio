@@ -262,6 +262,218 @@ table {
   border-spacing: 0;
 }
 
+/* header section  */
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0 0;
+}
+.header.active {
+  position: fixed;
+  top: 35px;
+  padding: 20px 15px;
+}
+.header.active .container {
+  max-width: 1200px;
+  margin: auto;
+}
+.header .nav-toggler {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.header .nav-toggler.hide {
+  opacity: 0;
+  transition: none;
+}
+.header .nav-toggler span {
+  height: 2px;
+  width: 24px;
+  background-color: #e02f6b;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.header .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 35px 15px;
+  overflow-y: auto;
+  visibility: hidden;
+}
+.header.active .nav {
+  visibility: visible;
+}
+.header .nav-inner {
+  min-height: calc(100vh - 70px);
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 50px 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.header .nav-inner ul li {
+  text-align: center;
+}
+.header .nav-inner ul li a {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #18293c;
+  display: block;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.header .nav-inner ul li a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+.header .nav-inner ul li a:hover::before {
+  width: 100%;
+}
+.header .nav-inner ul li a:hover {
+  color: #e02f6b;
+}
+.header.active .nav-inner {
+  opacity: 1;
+}
+
+.header.active .nav-toggler span {
+  background-color: transparent;
+}
+
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e02f6b;
+  transition: all 0.3s ease;
+}
+
+.header .nav-toggler span::before {
+  left: 0;
+  transform: translateY(-8px);
+}
+
+.header.active .nav-toggler span::before {
+  transform: rotate(45deg);
+}
+
+.header .nav-toggler span::after {
+  right: 0;
+  transform: translateY(8px);
+}
+
+.header.active .nav-toggler span::after {
+  transform: rotate(-45deg);
+}
+
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after {
+  width: 50%;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 200;
+  visibility: hidden;
+}
+.overlay.active {
+  visibility: visible;
+}
+
+.page-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+}
+.page-loader.fade-out {
+  opacity: 0;
+}
+.page-loader div {
+  border: 2px solid transparent;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.page-loader div:nth-child(1) {
+  height: 60px;
+  width: 60px;
+  border-color: #e02f6b;
+}
+.page-loader div:nth-child(2) {
+  height: 45px;
+  width: 45px;
+  border-color: #0000ff;
+  animation-duration: 1.2s;
+}
+.page-loader div:nth-child(3) {
+  height: 30px;
+  width: 30px;
+  border-color: #ffa500;
+}
+
 /* Buttons */
 button {
   font-family: inherit;
