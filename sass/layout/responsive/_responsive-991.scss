@@ -26,6 +26,16 @@
 
     .portfolio-item {
         width: calc(50% - 30px);
+
+        & h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .btn {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     

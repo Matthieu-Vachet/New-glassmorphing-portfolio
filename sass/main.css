@@ -631,6 +631,14 @@ section.fade-out {
   .portfolio-item {
     width: calc(50% - 30px);
   }
+  .portfolio-item h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-item .btn {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 767px) {
   .contact-form,
