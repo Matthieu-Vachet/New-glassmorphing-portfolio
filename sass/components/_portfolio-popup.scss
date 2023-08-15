@@ -45,6 +45,8 @@
   position: relative;
 
   & .btn {
+    background-color: $white-alpha-40;
+    backdrop-filter: $backdrop-filter-blur;
     height: 40px;
     width: 40px;
     padding: 0;
