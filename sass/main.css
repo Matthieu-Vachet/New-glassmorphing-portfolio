@@ -769,30 +769,40 @@ button {
 .main.fade-out {
   opacity: 0;
 }
-.main .row {
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+}
+
+.row {
   display: flex;
   flex-wrap: wrap;
 }
-.main .align-items-center {
+
+.align-items-center {
   align-items: center;
 }
-.main .hidden {
+
+.hidden {
   display: none !important;
 }
-.main .sec-padding {
+
+.sec-padding {
   padding: 80px 0;
 }
-.main .flex-end {
+
+.flex-end {
   justify-content: flex-end;
 }
 
+/* Section Title */
 .section-title {
   padding: 0 15px;
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
 }
-
 .section-title h2 {
   font-size: 40px;
   text-transform: capitalize;
