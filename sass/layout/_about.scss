@@ -1,0 +1,141 @@
+.about-img {
+  width: 40%;
+  padding: 0 15px;
+
+  & .img-box {
+    background-color: $white-alpha-25;
+    max-width: 380px;
+    border: 1px solid $white-alpha-40;
+    margin: auto;
+    border-radius: 10px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.about-text {
+  width: 60%;
+  padding: 0 15px;
+
+  & h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+
+  & .skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .skill-item {
+      background-color: $white-alpha-25;
+      border: 1px solid $white-alpha-40;
+      padding: 5px 15px;
+      text-transform: capitalize;
+      margin: 0 10px 10px 0;
+      border-radius: 20px;
+    }
+  }
+
+  & .timeline {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 5px;
+        top: 0;
+        background-color: $main-color;
+      }
+  }
+
+  & .timeline-item::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: $main-color;
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+  }
+
+  & .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  & .timeline-item .date {
+    display: block;
+    color: $main-color;
+    font-weight: 400;
+    margin: 0 0 10px;
+  }
+
+  & .timeline-item h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+
+    & span {
+        font-weight: 400;
+      }
+  }
+
+  & .btn {
+    margin: 0 15px 15px 0;
+  }
+}
+
+.about-tabs {
+  margin-top: 20px;
+
+  & .tab-item {
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: $blue-dark;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 30px 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 1px;
+      background-color: $blue-dark;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+
+    &.active {
+      opacity: 1;
+      color: $main-color;
+      cursor: auto;
+
+      &::before {
+        width: 100%;
+        background-color: $main-color;
+      }
+    }
+  }
+}

@@ -15,12 +15,6 @@ html {
  * faire en sorte que tous les éléments héritent de la valeur root box-sizing
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -28,8 +22,8 @@ html {
   outline: none;
 }
 
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -105,8 +99,5 @@ section {
   &.fade-out {
     animation: fadeOut 0.5s ease-in-out forwards;
     @include fadeOut;
-    
   }
 }
-
-
