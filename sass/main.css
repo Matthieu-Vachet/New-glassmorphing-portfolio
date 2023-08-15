@@ -551,6 +551,18 @@ table {
   top: 0;
   background-color: #e02f6b;
 }
+.about-text .tab-content {
+  padding: 40px 0;
+  display: none;
+}
+.about-text .tab-content.active {
+  display: block;
+}
+.about-text .timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0 0 40px;
+}
 .about-text .timeline-item::before {
   content: "";
   position: absolute;
@@ -578,7 +590,7 @@ table {
 .about-text .timeline-item h4 span {
   font-weight: 400;
 }
-.about-text .btn {
+.about-text .timeline-item .btn {
   margin: 0 15px 15px 0;
 }
 

@@ -43,50 +43,65 @@
     position: relative;
 
     &::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 1px;
-        left: 5px;
-        top: 0;
-        background-color: $main-color;
-      }
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      left: 5px;
+      top: 0;
+      background-color: $main-color;
+    }
   }
 
-  & .timeline-item::before {
-    content: "";
-    position: absolute;
-    height: 11px;
-    width: 11px;
-    background-color: $main-color;
-    left: 0;
-    top: 16px;
-    border-radius: 50%;
+  & .tab-content {
+    padding: 40px 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 
-  & .timeline-item:last-child {
-    margin-bottom: 0;
-  }
+  .timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
 
-  & .timeline-item .date {
-    display: block;
-    color: $main-color;
-    font-weight: 400;
-    margin: 0 0 10px;
-  }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 11px;
+      width: 11px;
+      background-color: $main-color;
+      left: 0;
+      top: 16px;
+      border-radius: 50%;
+    }
 
-  & .timeline-item h4 {
-    font-size: 18px;
-    text-transform: capitalize;
-    margin: 0 0 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-    & span {
+    & .date {
+      display: block;
+      color: $main-color;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    & h4 {
+      font-size: 18px;
+      text-transform: capitalize;
+      margin: 0 0 10px;
+
+      & span {
         font-weight: 400;
       }
-  }
+    }
 
-  & .btn {
-    margin: 0 15px 15px 0;
+    & .btn {
+      margin: 0 15px 15px 0;
+    }
   }
 }
 
@@ -113,7 +128,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
