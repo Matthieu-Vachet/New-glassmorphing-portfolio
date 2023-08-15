@@ -1,0 +1,30 @@
+@media(max-width:767px) {
+    .contact-form,
+    .about-img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .portfolio-item {
+        width: calc(100% - 30px);
+    }
+
+    .pp-inner {
+        padding: 30px 15px;
+    }
+
+    
+    .contact-info {
+        width: 100%;
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .contact-info-item {
+        padding: 0;
+    }
+}

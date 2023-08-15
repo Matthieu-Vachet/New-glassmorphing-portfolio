@@ -24,7 +24,6 @@
     border-top-color: transparent !important;
     border-bottom-color: transparent !important;
     animation: spin 1s linear infinite;
-    @include spin;
 
     &:nth-child(1) {
       height: 60px;
@@ -46,3 +45,5 @@
     }
   }
 }
+
+@include spin;

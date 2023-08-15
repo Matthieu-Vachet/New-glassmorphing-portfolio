@@ -22,10 +22,6 @@ html {
   outline: none;
 }
 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   min-height: 100vh;
@@ -93,11 +89,13 @@ section {
   &.active {
     display: block;
     animation: fadeIn 0.5s ease-in-out forwards;
-    @include fadeIn;
   }
 
   &.fade-out {
     animation: fadeOut 0.5s ease-in-out forwards;
-    @include fadeOut;
   }
 }
+
+@include fadeIn;
+
+@include fadeOut;

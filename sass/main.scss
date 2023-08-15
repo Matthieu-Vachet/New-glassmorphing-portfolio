@@ -3,7 +3,6 @@
 // 1. Configuration et aides
 @import
   './utils/variables',
-  './utils/functions',
   './utils/mixins-keyframes',
   './utils/mixins-background';
 
@@ -13,9 +12,7 @@
 // 3. Trucs de base
 @import
   './base/base',
-  './base/fonts',
-  './base/typography',
-  './base/reset';
+  './base/fonts';
 
 // 4. Sections liées à la mise en page
 @import
@@ -26,7 +23,10 @@
   './layout/home', 
   './layout/about',
   './layout/portfolio',
-  './layout/contact';
+  './layout/contact',
+  './layout/responsive/responsive-575',
+  './layout/responsive/responsive-767',
+  './layout/responsive/responsive-991';
 
 // 5. Composants
 @import
@@ -39,6 +39,4 @@
 @import
   './pages/home';
 
-// 7. Themes
-@import
-  './themes/default';
+

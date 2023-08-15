@@ -1,0 +1,25 @@
+@media (max-width: 575px) {
+  .section-title {
+    & h2 {
+      font-size: 35px;
+    }
+  }
+
+  .header .nav-inner ul li a {
+    font-size: 35px;
+  }
+
+  .home-text {
+    & h1 {
+      font-size: 30px;
+    }
+
+    & h2 {
+      font-size: 18px;
+    }
+  }
+
+  .pp-header {
+      font-size: 20px;
+  }
+}

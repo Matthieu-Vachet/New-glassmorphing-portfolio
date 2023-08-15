@@ -1,3 +1,5 @@
+/* about section */
+
 .about-img {
   width: 40%;
   padding: 0 15px;
@@ -41,46 +43,31 @@
 
   & .timeline {
     position: relative;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 1px;
-      left: 5px;
-      top: 0;
-      background-color: $main-color;
-    }
+  & .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 5px;
+    top: 0;
+    background-color: $main-color;
   }
 
   & .tab-content {
     padding: 40px 0;
     display: none;
-
-    &.active {
-      display: block;
-    }
   }
 
-  .timeline-item {
+  & .tab-content.active {
+    display: block;
+  }
+
+  & .timeline-item {
     margin-bottom: 30px;
     position: relative;
     padding: 10px 0 0 40px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 11px;
-      width: 11px;
-      background-color: $main-color;
-      left: 0;
-      top: 16px;
-      border-radius: 50%;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     & .date {
       display: block;
@@ -98,10 +85,25 @@
         font-weight: 400;
       }
     }
+  }
 
-    & .btn {
-      margin: 0 15px 15px 0;
-    }
+  & .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  & .timeline-item::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: $main-color;
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+  }
+  
+  & .btn {
+    margin: 0 15px 15px 0;
   }
 }
 
@@ -122,35 +124,35 @@
     position: relative;
     opacity: 0.5;
     transition: all 0.3s ease;
+  }
 
-    &:last-child {
-      margin: 0;
-    }
+  & .tab-item:last-child {
+    margin: 0;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0%;
-      height: 1px;
-      background-color: $blue-dark;
-      transition: width 0.3s ease;
-    }
+  & .tab-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: $blue-dark;
+    transition: width 0.3s ease;
+  }
 
-    &:hover::before {
-      width: 100%;
-    }
+  & .tab-item:hover::before {
+    width: 100%;
+  }
 
-    &.active {
-      opacity: 1;
-      color: $main-color;
-      cursor: auto;
+  & .tab-item.active::before {
+    width: 100%;
+    background-color: $main-color;
+  }
 
-      &::before {
-        width: 100%;
-        background-color: $main-color;
-      }
-    }
+  & .tab-item.active {
+    opacity: 1;
+    color: $main-color;
+    cursor: auto;
   }
 }
