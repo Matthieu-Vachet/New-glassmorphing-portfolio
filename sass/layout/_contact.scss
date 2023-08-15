@@ -1,0 +1,78 @@
+/* Contact Section */
+
+.contact-form {
+  width: 50%;
+  padding: 0 15px;
+
+  & .input-group {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  & .input-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $white-alpha-25;
+    padding: 0 20px;
+    color: $blue-dark;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: $blue-dark;
+      opacity: 0.8;
+      font-weight: 300;
+    }
+
+    &:focus {
+      border-color: $white-alpha-40;
+    }
+  }
+
+  & textarea.input-control {
+    height: 120px;
+    padding-top: 15px;
+    resize: none;
+  }
+}
+
+.contact-info {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.contact-info-item {
+  margin: 0 0 30px;
+  padding: 0 0 0 20px;
+
+  & h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+  }
+
+  & .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: $white-alpha-25;
+    border: 1px solid $white-alpha-40;
+    color: $main-color;
+    border-radius: 50%;
+    margin: 6px 4px 0 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $white;
+        background-color: $main-color;
+      }
+  }
+}
