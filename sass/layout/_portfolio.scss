@@ -1,0 +1,32 @@
+/* Portfolio Section */
+
+.portfolio-section {
+  padding-bottom: 50px;
+}
+
+.portfolio-item {
+  width: calc((100% / 3) - 30px);
+  margin: 0 15px 30px;
+
+  & h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+}
+
+.portfolio-item-thumbnail {
+  padding: 10px;
+  background-color: $white-alpha-25;
+  border: 1px solid $white-alpha-40;
+  border-radius: 10px;
+
+  & img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.portfolio-item-details {
+  display: none;
+}

@@ -24,13 +24,15 @@
   './layout/overlay',
   './layout/page-loader',
   './layout/home', 
-  './layout/about';
+  './layout/about',
+  './layout/portfolio';
 
 // 5. Composants
 @import
   './components/button',
   './components/custom-scrollbar',
-  './components/circles';
+  './components/circles',
+  './components/portfolio-popup';
 
 // 6. Styles spécifiques à la page
 @import
