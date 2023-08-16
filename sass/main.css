@@ -134,7 +134,7 @@ section.fade-out {
 .header .nav-toggler span {
   height: 2px;
   width: 24px;
-  background-color: #e02f6b;
+  background-color: #915B4A;
   position: relative;
   transition: background-color 0.3s ease;
 }
@@ -196,7 +196,7 @@ section.fade-out {
   width: 100%;
 }
 .header .nav-inner ul li a:hover {
-  color: #e02f6b;
+  color: #915B4A;
 }
 
 .header.active {
@@ -221,7 +221,7 @@ section.fade-out {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #e02f6b;
+  background-color: #915B4A;
   transition: all 0.3s ease;
 }
 
@@ -301,7 +301,7 @@ section.fade-out {
 .page-loader div:nth-child(1) {
   height: 60px;
   width: 60px;
-  border-color: #e02f6b;
+  border-color: #915B4A;
 }
 .page-loader div:nth-child(2) {
   height: 45px;
@@ -339,6 +339,27 @@ section.fade-out {
   padding: 15px;
 }
 
+.home-text .title-parallaxe {
+  position: relative;
+  display: flex;
+  top: -80px;
+  right: -50px;
+  gap: 15px;
+  font-size: 5em;
+  white-space: nowrap;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+}
+.home-text .title-parallaxe span {
+  position: relative;
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+.home-text .title-parallaxe span:hover {
+  filter: blur(0px);
+  transition: 0s;
+  color: #915B4A;
+}
 .home-text p {
   font-size: 18px;
 }
@@ -415,7 +436,7 @@ section.fade-out {
   width: 1px;
   left: 5px;
   top: 0;
-  background-color: #e02f6b;
+  background-color: #915B4A;
 }
 .about-text .tab-content {
   padding: 40px 0;
@@ -431,7 +452,7 @@ section.fade-out {
 }
 .about-text .timeline-item .date {
   display: block;
-  color: #e02f6b;
+  color: #915B4A;
   font-weight: 400;
   margin: 0 0 10px;
 }
@@ -451,7 +472,7 @@ section.fade-out {
   position: absolute;
   height: 11px;
   width: 11px;
-  background-color: #e02f6b;
+  background-color: #915B4A;
   left: 0;
   top: 16px;
   border-radius: 50%;
@@ -496,11 +517,11 @@ section.fade-out {
 }
 .about-tabs .tab-item.active::before {
   width: 100%;
-  background-color: #e02f6b;
+  background-color: #915B4A;
 }
 .about-tabs .tab-item.active {
   opacity: 1;
-  color: #e02f6b;
+  color: #915B4A;
   cursor: auto;
 }
 
@@ -599,14 +620,14 @@ section.fade-out {
   width: 40px;
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #e02f6b;
+  color: #915B4A;
   border-radius: 50%;
   margin: 6px 4px 0 0;
   transition: all 0.3s ease;
 }
 .contact-info-item .social-links a:hover {
-  color: #fff;
-  background-color: #e02f6b;
+  color: #fffeff;
+  background-color: #915B4A;
 }
 
 @media (max-width: 991px) {
@@ -619,6 +640,12 @@ section.fade-out {
   }
   .home-text {
     text-align: center;
+  }
+  .home-text .title-parallaxe {
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
   }
   .home-text .btn {
     margin: 0 7px 15px;
@@ -642,6 +669,9 @@ section.fade-out {
   }
 }
 @media (max-width: 767px) {
+  .home-text .title-parallaxe {
+    font-size: 4em;
+  }
   .contact-form,
   .about-img {
     width: 100%;
@@ -672,6 +702,10 @@ section.fade-out {
   .header .nav-inner ul li a {
     font-size: 35px;
   }
+  .home-text .title-parallaxe {
+    font-size: 3em;
+    gap: 5px;
+  }
   .home-text h1 {
     font-size: 30px;
   }
@@ -697,7 +731,7 @@ button {
   padding: 10px 28px;
   display: inline-block;
   border-radius: 30px;
-  color: #e02f6b;
+  color: #915B4A;
   font-weight: 500;
   text-transform: capitalize;
   font-family: inherit;
@@ -718,7 +752,7 @@ button {
   top: 0;
   height: 100%;
   width: 0%;
-  background-color: #e02f6b;
+  background-color: #915B4A;
   z-index: -1;
   transition: width 0.3s ease;
 }
@@ -726,7 +760,7 @@ button {
   width: 100%;
 }
 .btn:hover {
-  color: #fff;
+  color: #fffeff;
 }
 
 /* Custom Scrollbar */
@@ -735,11 +769,11 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #fffeff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e02f6b;
+  background: #915B4A;
 }
 
 /* Background circles */
@@ -768,7 +802,7 @@ button {
 .bg-circles .circle-2 {
   height: 80px;
   width: 80px;
-  background-color: #e02f6b;
+  background-color: #915B4A;
   left: 30%;
   top: 50%;
   opacity: 0.4;
@@ -777,7 +811,7 @@ button {
 .bg-circles .circle-3 {
   height: 120px;
   width: 120px;
-  background-color: #fff;
+  background-color: #fffeff;
   top: 40%;
   right: -60px;
   opacity: 0.6;
@@ -884,7 +918,7 @@ button {
   text-transform: capitalize;
 }
 .pp-body .general-info li a {
-  color: #e02f6b;
+  color: #915B4A;
   text-transform: lowercase;
 }
 .pp-body .general-info li span {

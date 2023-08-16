@@ -11,6 +11,13 @@
     .home-text {
         text-align: center;
 
+        & .title-parallaxe{
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+
         & .btn {
             margin: 0 7px 15px;
         }

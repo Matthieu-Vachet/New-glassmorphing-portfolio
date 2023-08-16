@@ -16,6 +16,29 @@
 }
 
 .home-text {
+  & .title-parallaxe {
+    position: relative;
+    display: flex;
+    top: -80px;
+    right: -50px;
+    gap: 15px;
+    font-size: 5em;
+    white-space: nowrap;
+    cursor: pointer;
+    color: $white-alpha-40;
+
+    & span {
+      position: relative;
+      filter: blur(5px);
+      transition: all 0.5s;
+    }
+    & span:hover {
+      filter: blur(0px);
+      transition: 0s;
+      color: $main-color;
+    }
+  }
+
   & p {
     font-size: 18px;
   }

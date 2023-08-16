@@ -10,6 +10,11 @@
   }
 
   .home-text {
+    & .title-parallaxe {
+      font-size: 3em;
+      gap: 5px;
+    }
+
     & h1 {
       font-size: 30px;
     }
@@ -20,6 +25,6 @@
   }
 
   .pp-header {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
