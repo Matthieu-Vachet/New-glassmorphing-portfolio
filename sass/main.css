@@ -765,6 +765,13 @@ button {
   color: #fffeff;
 }
 
+.btn-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
