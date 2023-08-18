@@ -15,41 +15,43 @@
   }
 
   & .circle-1 {
-    width: 60px;
-    height: 60px;
-    background-color: $blue;
+    width: 100px;
+    height: 100px;
+    background-color: $white-alpha-40;
     left: 5%;
-    top: 10%;
+    top: 5%;
     opacity: 0.3;
     animation: zoomInOut 8s linear infinite;
   }
 
   & .circle-2 {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     background-color: $main-color;
-    left: 30%;
-    top: 50%;
+    left: 80%;
+    top: 80%;
     opacity: 0.4;
     animation: bounceTop 5s ease-in-out infinite;
   }
 
   & .circle-3 {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     background-color: $white;
-    top: 40%;
-    right: -60px;
+    top: 20%;
+    right: -30px;
     opacity: 0.6;
+    animation: sc
   }
 
   & .circle-4 {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-color: $orange;
     top: 80%;
-    left: -30px;
+    left: -35px;
     opacity: 0.6;
+    animation: spin 10s linear infinite;
   }
 }
 

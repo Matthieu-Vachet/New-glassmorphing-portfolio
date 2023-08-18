@@ -76,12 +76,12 @@ ul {
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   min-height: calc(100vh - 70px);
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   display: none;
 }
 section.active {
@@ -123,7 +123,7 @@ section.fade-out {
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
@@ -157,10 +157,10 @@ section.fade-out {
   min-height: calc(100vh - 70px);
   max-width: 1200px;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   padding: 50px 0;
   border-radius: 30px;
   display: flex;
@@ -189,7 +189,7 @@ section.fade-out {
   bottom: 0;
   height: 50%;
   width: 0%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   z-index: -1;
   transition: width 0.5s ease;
 }
@@ -279,9 +279,9 @@ section.fade-out {
   height: 100%;
   width: 100%;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,14 +380,18 @@ section.fade-out {
 
 .home-img .img-box {
   max-width: 360px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
-  border: 8px solid rgba(255, 255, 255, 0.25);
+  border: 8px solid #fffeff;
   margin: auto;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
 }
 .home-img .img-box img {
   width: 100%;
   border-radius: 50%;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
 }
 
 /* about section */
@@ -396,7 +400,7 @@ section.fade-out {
   padding: 0 15px;
 }
 .about-img .img-box {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   max-width: 380px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   margin: auto;
@@ -420,7 +424,7 @@ section.fade-out {
   flex-wrap: wrap;
 }
 .about-text .skills .skill-item {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 5px 15px;
   text-transform: capitalize;
@@ -543,7 +547,7 @@ section.fade-out {
 
 .portfolio-item-thumbnail {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
 }
@@ -574,7 +578,7 @@ section.fade-out {
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 0 20px;
   color: #18293c;
   border: 1px solid transparent;
@@ -619,7 +623,7 @@ section.fade-out {
   justify-content: center;
   height: 40px;
   width: 40px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   color: #915B4A;
   border-radius: 50%;
@@ -732,7 +736,7 @@ button {
   font-style: normal;
   font-family: "Poppins";
   line-height: 1.5;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 10px 28px;
   display: inline-block;
@@ -800,38 +804,40 @@ button {
   border-radius: 50%;
 }
 .bg-circles .circle-1 {
-  width: 60px;
-  height: 60px;
-  background-color: #0000ff;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
   left: 5%;
-  top: 10%;
+  top: 5%;
   opacity: 0.3;
   animation: zoomInOut 8s linear infinite;
 }
 .bg-circles .circle-2 {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   background-color: #915B4A;
-  left: 30%;
-  top: 50%;
+  left: 80%;
+  top: 80%;
   opacity: 0.4;
   animation: bounceTop 5s ease-in-out infinite;
 }
 .bg-circles .circle-3 {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background-color: #fffeff;
-  top: 40%;
-  right: -60px;
+  top: 20%;
+  right: -30px;
   opacity: 0.6;
+  animation: sc;
 }
 .bg-circles .circle-4 {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   background-color: #ffa500;
   top: 80%;
-  left: -30px;
+  left: -35px;
   opacity: 0.6;
+  animation: spin 10s linear infinite;
 }
 
 @keyframes zoomInOut {
@@ -879,14 +885,14 @@ button {
 }
 
 .pp-content {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 30px;
   border-radius: 30px;
   max-width: 900px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   opacity: 0;
   transform: scale(0.9);
 }
@@ -896,8 +902,8 @@ button {
 }
 .pp-header .btn {
   background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   height: 40px;
   width: 40px;
   padding: 0;

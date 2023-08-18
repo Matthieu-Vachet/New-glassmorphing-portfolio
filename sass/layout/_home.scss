@@ -62,13 +62,16 @@
 
 .home-img .img-box {
   max-width: 360px;
-  background-color: $white-alpha-25;
+  background-color: $white-alpha-40;
   border-radius: 50%;
-  border: 8px solid $white-alpha-25;
+  border: 8px solid $white;
   margin: auto;
+  clip-path: circle(40%);
+
 
   & img {
     width: 100%;
     border-radius: 50%;
+    clip-path: circle(40%);
   }
 }
