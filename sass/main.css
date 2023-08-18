@@ -24,11 +24,12 @@ body {
   min-height: 100vh;
   background: #f0c27b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom right, #4b1248, #f0c27b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-attachment: fixed;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
   color: #18293c;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Poppins";
+  background-attachment: fixed;
   line-height: 1.5;
   overflow-x: hidden;
   /* webkit-top-highlight-color: transparent; */
@@ -725,17 +726,18 @@ button {
 }
 
 .btn {
+  font-size: 16px;
+  color: #915B4A;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins";
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 10px 28px;
   display: inline-block;
   border-radius: 30px;
-  color: #915B4A;
-  font-weight: 500;
   text-transform: capitalize;
-  font-family: inherit;
-  font-size: 16px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;

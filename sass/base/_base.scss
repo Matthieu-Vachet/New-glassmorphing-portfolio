@@ -26,11 +26,8 @@ html {
 body {
   min-height: 100vh;
   @include background-main;
+  @include fontPoppins300(16px, $blue-dark);
   background-attachment: fixed;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: $blue-dark;
   line-height: 1.5;
   overflow-x: hidden;
   /* webkit-top-highlight-color: transparent; */
