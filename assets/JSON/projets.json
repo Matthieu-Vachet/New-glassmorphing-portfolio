@@ -4,7 +4,7 @@
         "title": "Print'It",
         "description": "Projet 5 OpenClassrooms.<br> Premiers pas sur le langage JavaScript. <br> Création d'un carrousel en Javascript, incluant bullets points de position et flèche de slide.",
         "created": "07/2023",
-        "img": "assets/images/Projets/PrintIt.png",
+        "img": "assets/images/Projets/Printit.png",
         "technologies": "HTML, CSS, JavaScript",
         "rôle": "Frontend",
         "linkWeb": "https://matthieu-vachet.github.io/Projet-5-openclassrooms-Print-It/",
