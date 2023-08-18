@@ -933,6 +933,9 @@ button {
 .pp-body .general-info li span {
   font-weight: 300;
 }
+.pp-body .general-info li .label-text {
+  font-weight: 500;
+}
 
 .main {
   max-width: 1200px;

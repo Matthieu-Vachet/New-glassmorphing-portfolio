@@ -63,39 +63,33 @@ function generatePortfolioItems(data) {
     generalInfo.classList.add("general-info");
     const infoList = document.createElement("ul");
     const infoItems = [
-        { label: "Crée le: ", value: project.created },
-        { label: "Technologie: ", value: project.technologies },
-        { label: "Rôle: ", value: project.rôle },
-        { label: "Catégorie: ", value: project.catégorie },
-        {
-          label: "Liens :",
-          value: `
+      { label: "Crée le: ", value: project.created },
+      { label: "Technologie: ", value: project.technologies },
+      { label: "Rôle: ", value: project.rôle },
+      { label: "Catégorie: ", value: project.catégorie },
+      {
+        label: "Liens :",
+        value: `
             <div class="btn-portfolio">
               <button class="btn" onclick="window.open('${project.linkWeb}', '_blank')">En ligne</button>
               <button class="btn" onclick="window.open('${project.linkGithub}', '_blank')">Repo Github</button>
             </div>
           `,
-        },
-      ];
+      },
+    ];
 
-    // Ajouter des balises <span> autour des titres
-    const formattedInfoItems = infoItems.map((item) => {
-      return {
-        label: `<span>${item.label}</span>`, // Ajouter des balises <span> autour du label
-        value: item.value,
-      };
-    });
-
+    
     infoItems.forEach((item) => {
-      const listItem = document.createElement("li");
-      const label = document.createElement("span");
-      label.textContent = item.label;
-      const value = document.createElement("span");
-      value.innerHTML = item.value;
-      listItem.appendChild(label);
-      listItem.appendChild(value);
-      infoList.appendChild(listItem);
-    });
+        const listItem = document.createElement("li");
+        const label = document.createElement("span");
+        label.classList.add("label-text"); // Ajouter la classe "label-text"
+        label.textContent = item.label;
+        const value = document.createElement("span");
+        value.innerHTML = item.value;
+        listItem.appendChild(label);
+        listItem.appendChild(value);
+        infoList.appendChild(listItem);
+      });
 
     generalInfo.appendChild(infoList);
 
