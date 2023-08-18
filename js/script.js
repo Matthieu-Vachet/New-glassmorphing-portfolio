@@ -2,7 +2,7 @@
 async function loadJSON() {
   try {
     // Utilisation de la méthode fetch pour récupérer le fichier JSON
-    const response = await fetch("/assets/json/projets.json");
+    const response = await fetch("/assets/JSON/projets.json");
 
     // Vérification de la réponse HTTP
     if (!response.ok) {
