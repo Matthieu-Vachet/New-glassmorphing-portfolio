@@ -33,6 +33,10 @@ body {
   /* webkit-top-highlight-color: transparent; */
   padding: 35px 15px;
 
+  &.dark {
+    @include background-main-dark;
+  }
+
   &.hide-scrolling {
     overflow-y: hidden;
   }
