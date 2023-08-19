@@ -17,26 +17,41 @@
   //   background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
 }
 
+@mixin background-glassmorphing {
+  background-color: $white-alpha-25;
+  border: 1px solid $white-alpha-40;
+}
 
-
-//  
+//
 // DARK MODE
 //
 
 @mixin background-main-dark {
-  background: #0F2027; /* fallback for old browsers */
+  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #2C5364,
-    #203A43,
-    #0F2027
-
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #2C5364,
-    #203A43,
-    #0F2027
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   //   background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
+}
+
+@mixin background-neumorphisme {
+  border: none;
+  background-color: $background-neumorphisme;
+  background: $background-neumorphisme;
+  box-shadow: $shadow-neumorphisme;
+}
+
+@mixin background-neumorphisme-toggle {
+  background-color: linear-gradient(45deg, #444444, #3a3a3a);
+  background: linear-gradient(45deg, #444444, #3a3a3a);
+  box-shadow: 5px -5px 16px #1b1b1b, -5px 5px 16px #656565;
 }

@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-// COLORS // 
+// COLORS NORMAL // 
 $main-color: #915B4A;
 $blue: #0000ff;
 $blue-dark: #18293c;
@@ -13,9 +13,16 @@ $pink-light: #efa2b4;
 $cyan-light: #aef1ee;
 $white: #fffeff;
 
+// COLORS DARK //
+$main-color-dark: white;
+
 // GLASSMORPH //
 $white-alpha-40: rgba(255, 255, 255, 0.4);
 $white-alpha-25: rgba(255, 255, 255, 0.2);
+
+// NEUMORPHISME //
+$background-neumorphisme: linear-gradient(315deg, #3a3a3a, #444444);
+$shadow-neumorphisme: -7px -7px 26px #313131, 7px 7px 26px #4f4f4f;
 
 // FILTER //
 $backdrop-filter-blur: blur(3px);

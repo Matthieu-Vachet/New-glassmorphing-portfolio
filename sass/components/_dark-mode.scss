@@ -1,0 +1,27 @@
+body {
+  &.dark {
+    @include background-main-dark;
+    @include fontPoppins300(16px, $white);
+  }
+}
+
+section {
+  &.dark {
+    @include background-neumorphisme;
+    border: none;
+    backdrop-filter: none;
+  }
+}
+
+.header {
+
+  & .nav-inner.dark {
+    @include background-neumorphisme;
+    backdrop-filter: none;
+  }
+  & .nav-toggler.dark {
+    @include background-neumorphisme-toggle;
+    border: none;
+  }
+}
+
