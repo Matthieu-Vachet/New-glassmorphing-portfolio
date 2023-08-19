@@ -68,7 +68,7 @@ function generatePortfolioItems(data) {
       { label: "Rôle: ", value: project.rôle },
       { label: "Catégorie: ", value: project.catégorie },
       {
-        label: "Liens :",
+        label: "",
         value: `
             <div class="btn-portfolio">
               <button class="btn" onclick="window.open('${project.linkWeb}', '_blank')">En ligne</button>
