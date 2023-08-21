@@ -1,5 +1,6 @@
 // ACTIVE SECTION //
 const toggleDark = document.getElementById("toggle");
+const toggleColors = document.getElementById("color-select");
 // Ajouter un écouteur d'événements pour le clic sur la page entière
 document.addEventListener("click", (e) => {
   // Vérifier si l'élément cliqué a la classe "link-item" et s'il a un attribut "hash" non vide
@@ -8,8 +9,9 @@ document.addEventListener("click", (e) => {
     document.querySelector(".overlay").classList.add("active");
     // Ajouter la classe "hide" à l'élément avec la classe "navbarToggler"
     navbarToggler.classList.add("hide");
-
     toggleDark.classList.add("hide");
+    toggleColors.classList.add("hide")
+
 
     // Vérifier si l'élément cliqué a la classe "nav-item"
     if (e.target.classList.contains("nav-item")) {
@@ -36,8 +38,8 @@ document.addEventListener("click", (e) => {
       document.body.classList.remove("hide-scrolling");
       // Retirer la classe "hide" à l'élément avec la classe "navbarToggler"
       navbarToggler.classList.remove("hide");
-
       toggleDark.classList.remove("hide");
+      toggleColors.classList.remove("hide");
       // Retirer la classe "active" de la superposition
       document.querySelector(".overlay").classList.remove("active");
     }, 500);

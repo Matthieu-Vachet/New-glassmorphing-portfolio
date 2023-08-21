@@ -55,12 +55,12 @@ section {
   }
 }
 
-.color-select.dark .colorToggle {
+#color-select.dark .colorToggle {
   @include button-neumorphisme;
   border: none;
   transition: 1.5s;
 
-  &.active ~ .menu-color {
+  &.open ~ .menu-color {
     @include background-neumorphisme;
 }
 }

@@ -967,6 +967,7 @@ button {
   box-shadow: inset 8px 8px 16px #363636, inset -8px -8px 16px #4a4a4a;
   transition: all 1s ease;
   border: none;
+  transition: all 1.5s;
 }
 #toggle .indicator {
   position: absolute;
@@ -1060,7 +1061,7 @@ section.dark {
   border: none;
 }
 
-.color-select.dark .colorToggle {
+#color-select.dark .colorToggle {
   border-radius: 50px;
   background: #404040;
   box-shadow: 8px 8px 16px #363636, -8px -8px 16px #4a4a4a;
@@ -1068,7 +1069,7 @@ section.dark {
   border: none;
   transition: 1.5s;
 }
-.color-select.dark .colorToggle.active ~ .menu-color {
+#color-select.dark .colorToggle.open ~ .menu-color {
   border: none;
   background-color: linear-gradient(315deg, #3a3a3a, #444444);
   background: linear-gradient(315deg, #3a3a3a, #444444);
@@ -1200,13 +1201,14 @@ img.dark {
   transition: all 1s ease;
 }
 
-.color-select {
+#color-select {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
-.color-select .colorToggle {
+#color-select .colorToggle {
   position: relative;
   display: flex;
   align-items: center;
@@ -1219,16 +1221,16 @@ img.dark {
   cursor: pointer;
   transition: 1.5s;
 }
-.color-select .colorToggle.active {
+#color-select .colorToggle.hide {
   transform: rotate(360deg);
 }
-.color-select .colorToggle i {
+#color-select .colorToggle i {
   position: relative;
   top: 2px;
   color: #fffeff;
   font-size: 2.1em;
 }
-.color-select .menu-color {
+#color-select .menu-color {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1239,7 +1241,7 @@ img.dark {
   transition-delay: 1s, 0.5s, 0.5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.color-select .menu-color ul {
+#color-select .menu-color ul {
   position: relative;
   display: flex;
   align-items: center;
@@ -1247,7 +1249,7 @@ img.dark {
   height: 40px;
   gap: 5px;
 }
-.color-select .menu-color ul li {
+#color-select .menu-color ul li {
   list-style: none;
   cursor: pointer;
   opacity: 0;
@@ -1256,16 +1258,16 @@ img.dark {
   transition: 0.25s;
   transition-delay: calc(0s + var(--i));
 }
-.color-select .menu-color ul li:hover a {
+#color-select .menu-color ul li:hover a {
   color: grey;
 }
-.color-select .menu-color ul li a {
+#color-select .menu-color ul li a {
   display: block;
   font-size: 1.5em;
   text-decoration: none;
   color: #fffeff;
 }
-.color-select .colorToggle.active ~ .menu-color {
+#color-select .colorToggle.open ~ .menu-color {
   width: 150px;
   height: 40px;
   background: rgba(255, 255, 255, 0.2);
@@ -1274,11 +1276,16 @@ img.dark {
   transform: translateY(55px);
   transition-delay: 0s, 0.5s, 0.5s;
 }
-.color-select .colorToggle.active ~ .menu-color ul li {
+#color-select .colorToggle.open ~ .menu-color ul li {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
   transition-delay: calc(0.75s + var(--i));
+}
+
+.color-select.hide {
+  opacity: 0;
+  transition: none;
 }
 
 .main {

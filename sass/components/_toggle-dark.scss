@@ -21,6 +21,7 @@
   &.dark {
     @include button-neumorphisme-hover;
     border: none;
+    transition: all 1.5s;
   }
 
   & .indicator {

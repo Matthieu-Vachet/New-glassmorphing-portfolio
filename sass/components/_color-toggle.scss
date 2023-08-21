@@ -1,8 +1,9 @@
-.color-select {
+#color-select {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 
   & .colorToggle {
     position: relative;
@@ -17,7 +18,7 @@
     cursor: pointer;
     transition: 1.5s;
 
-    &.active {
+    &.hide {
       transform: rotate(360deg);
     }
 
@@ -73,7 +74,7 @@
 
   }
 
-  & .colorToggle.active ~ .menu-color {
+  & .colorToggle.open ~ .menu-color {
       width: 150px;
       height: 40px;
       background: $white-alpha-25;
@@ -83,13 +84,14 @@
       transition-delay: 0s, 0.5s, 0.5s;
   }
 
-  & .colorToggle.active ~ .menu-color ul li {
+  & .colorToggle.open ~ .menu-color ul li {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
     transition-delay: calc(0.75s + var(--i));
 }
-
-
-
+}
+.color-select.hide {
+  opacity: 0;
+  transition: none;
 }
