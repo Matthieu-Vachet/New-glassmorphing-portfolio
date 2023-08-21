@@ -24,34 +24,30 @@ section {
   }
 }
 
+.nav-toggler.dark {
+  @include background-neumorphisme-toggle;
+  border: none;
+}
 
-.header {
+.nav-inner.dark {
+  @include background-neumorphisme;
+  backdrop-filter: none;
 
-  & .nav-inner.dark {
-    @include background-neumorphisme;
-    backdrop-filter: none;
-  }
-
-  & .nav-inner.dark ul li {
+  & ul li {
     margin: 20px;
   }
 
-  & .nav-inner.dark ul li a {
+  & ul li a {
     @include button-neumorphisme;
   }
 
-  & .nav-inner.dark ul li a::before {
+  & ul li a::before {
     display: none;
   }
 
-  & .nav-inner.dark ul li a:hover {
+  & ul li a:hover {
     @include button-neumorphisme-hover;
     color: $secondary-color-dark;
-  }
-
-  & .nav-toggler.dark {
-    @include background-neumorphisme-toggle;
-    border: none;
   }
 }
 
@@ -62,101 +58,120 @@ section {
 
   &.open ~ .menu-color {
     @include background-neumorphisme;
-}
-}
-
-.color-select.dark .menu-color {
-  @include background-neumorphisme;
-}
-
-img.dark {
-    @include button-neumorphisme;
   }
 
-.about-img .img-box.dark {
+  & .menu-color {
+    @include background-neumorphisme;
+  }
+}
+
+.home-img.dark img {
+  @include button-neumorphisme;
+}
+
+.about-img.dark .img-box {
   @include button-neumorphisme;
   border: none;
 }
 
-.about-text.dark .skill-item {
-  @include button-neumorphisme;
-  background-color: none;
-  border: none;
+.about-text.dark {
+  & .skill-item {
+    @include button-neumorphisme;
+    background-color: none;
+    border: none;
+  }
+
+  & .timeline .date {
+    color: $secondary-color-dark;
+  }
+
+  & .timeline::before {
+    background-color: $secondary-color-dark;
+  }
+
+  & .timeline-item::before {
+    background-color: $white;
+  }
 }
 
-.about-text.dark .timeline .date {
-  color: $secondary-color-dark;
-}
+.about-tabs.dark {
+  & .tab-item {
+    color: $white;
+  }
 
-.about-text.dark .timeline::before {
-  background-color: $secondary-color-dark;
-}
+  & .tab-item::before {
+    color: $secondary-color-dark;
+  }
 
-.about-text.dark .timeline-item::before {
-  background-color: $white;
-}
+  & .tab-item.active {
+    color: $secondary-color-dark;
+  }
 
-.about-tabs.dark .tab-item {
-  color: $white;
-}
-
-.about-tabs.dark .tab-item::before {
-  color: $secondary-color-dark;
-}
-
-.about-tabs.dark .tab-item.active {
-  color: $secondary-color-dark;
-}
-
-.about-tabs.dark .tab-item.active::before {
-  color: $secondary-color-dark;
-}
-
-
-
-.portfolio-item-thumbnail.dark {
-@include button-neumorphisme;
-border-radius: 10px;
-border: none;
+  & .tab-item.active::before {
+    color: $secondary-color-dark;
+  }
 }
 
 .pp-content.dark {
   @include background-neumorphisme;
   backdrop-filter: none;
-}
 
-.pp-content.dark .btn {
-  @include button-neumorphisme;
-  border: none;
-}
+  & .btn {
+    @include button-neumorphisme;
+    border: none;
+  }
 
-.pp-content.dark .btn:hover {
-  @include button-neumorphisme-hover;
-}
-
-.contact-form.dark .input-control {
-  @include button-neumorphisme-hover;
-  border-radius: 25px;
-  border: none;
-  color: $white;
-}
-
-.contact-form.dark .input-control::placeholder {
-  color: $white;
-}
-
-.contact-info.dark .social-links a {
-  @include button-neumorphisme;
-  border: none;
-  color: $white;
-
-  &:hover {
+  & .btn:hover {
     @include button-neumorphisme-hover;
   }
 }
 
+.contact-form.dark {
+  & .input-control {
+    @include button-neumorphisme-hover;
+    border-radius: 25px;
+    border: none;
+    color: $white;
+  }
 
+  & .input-control::placeholder {
+    color: $white;
+  }
 
+  & .social-links a {
+    @include button-neumorphisme;
+    border: none;
+    color: $white;
 
+    &:hover {
+      @include button-neumorphisme-hover;
+    }
+  }
+}
 
+.portfolio-item.dark {
+  .btn {
+    @include button-neumorphisme;
+    border: none;
+    color: $white;
 
+    &:hover {
+      @include button-neumorphisme-hover;
+    }
+  }
+
+  & .portfolio-item-thumbnail {
+    @include button-neumorphisme;
+    border-radius: 10px;
+    border: none;
+  }
+
+  & .btn-portfolio {
+    @include button-neumorphisme;
+    color: $white;
+
+    &:hover {
+      @include button-neumorphisme-hover;
+    }
+  }
+}

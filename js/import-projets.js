@@ -110,4 +110,15 @@ function generatePortfolioItems(data) {
 loadJSON().then((data) => {
   // Générer le code HTML à partir des données JSON
   generatePortfolioItems(data);
+
+    // Sélectionner tous les nouveaux éléments importés
+    const newElements = document.querySelectorAll(".portfolio-item");
+
+    // Ajouter la classe "dark" aux nouveaux éléments
+    newElements.forEach((element) => {
+      element.classList.add("dark");
+    });
 });
+
+
+
