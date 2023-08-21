@@ -1284,6 +1284,26 @@ section.dark {
   transition: 0.25s;
   transition-delay: calc(0s + var(--i));
 }
+#color-select .menu-color ul li i {
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+#color-select .menu-color ul li i:hover {
+  opacity: 1;
+  scale: 1.3;
+}
+#color-select .menu-color ul .orange {
+  color: orange;
+}
+#color-select .menu-color ul .red {
+  color: red;
+}
+#color-select .menu-color ul .pink {
+  color: pink;
+}
+#color-select .menu-color ul .blue {
+  color: blue;
+}
 #color-select .menu-color ul li:hover a {
   color: grey;
 }
