@@ -32,15 +32,19 @@ section {
     backdrop-filter: none;
   }
 
-  & .nav-inner ul li.dark {
+  & .nav-inner.dark ul li {
     margin: 20px;
   }
 
-  & .nav-inner ul li a.dark {
+  & .nav-inner.dark ul li a {
     @include button-neumorphisme;
   }
 
-  & .nav-inner ul li a:hover.dark {
+  & .nav-inner.dark ul li a::before {
+    display: none;
+  }
+
+  & .nav-inner.dark ul li a:hover {
     @include button-neumorphisme-hover;
     color: $secondary-color-dark;
   }

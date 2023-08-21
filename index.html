@@ -15,7 +15,8 @@
   <script src="/js/about-tabs.js" defer></script>
   <script src="/js/import-projets.js" defer></script>
   <script src="/js/portfolio-popup.js" defer></script>
- 
+  <script src="/js/colorToggle.js" defer></script>
+
 </head>
 
 <body>
@@ -56,9 +57,23 @@
       <!-- Header start -->
       <header class="header">
         <div class="container">
-          <div class="row flex-end">
+          <div class="row flex-space-between">
             <div id="toggle">
               <i class="indicator"></i>
+            </div>
+            <div class="color-select">
+
+              <div class="colorToggle">
+                <i class="fa-solid fa-brush"></i>
+              </div>
+              <div class="menu-color">
+                <ul>
+                  <li style="--i:0.1s;"><a href="#" <i class="fa-solid fa-paintbrush"></i></a></li>
+                  <li style="--i:0.2s;"><a href="#" <i class="fa-solid fa-paintbrush"></i></a></li>
+                  <li style="--i:0.3s;"><a href="#" <i class="fa-solid fa-paintbrush"></i></a></li>
+                  <li style="--i:0.4s;"><a href="#" <i class="fa-solid fa-paintbrush"></i></a></li>
+                </ul>
+              </div>
             </div>
             <button class="nav-toggler">
               <span></span>
@@ -224,7 +239,8 @@
               <bouton type="button" class="btn view-project-btn">Voir le projet</bouton>
               <div class="portfolio-item-details">
                 <div class="description">
-                  <p>Projet 5 OpenClassrooms.<br> Premiers pas sur le langage JavaScript. <br> Création d'un carrousel en Javascript, incluant bullets points de position et flèche de slide.</p>
+                  <p>Projet 5 OpenClassrooms.<br> Premiers pas sur le langage JavaScript. <br> Création d'un carrousel
+                    en Javascript, incluant bullets points de position et flèche de slide.</p>
                 </div>
                 <div class="general-info">
                   <ul>
