@@ -8,6 +8,7 @@ const navInner = document.querySelector(".nav-inner");
 const navInnerUl = document.querySelectorAll(".nav-inner ul li");
 const navInnerA = document.querySelectorAll(".nav-inner ul li a");
 const btn = document.querySelectorAll(".btn");
+const colorsToggle = document.querySelector(".color-select");
 
 //about//
 const imgBox = document.querySelector(".about-img .img-box");
@@ -49,4 +50,7 @@ toggle.onclick = function () {
     //contact//
     contactForm.classList.toggle("dark");
     contactInfo.classList.toggle("dark");
+
+    //Color Toggle//
+    colorsToggle.classList.toggle("dark");
 };

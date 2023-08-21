@@ -19,7 +19,7 @@
   & .title-parallaxe {
     position: relative;
     display: flex;
-    top: -80px;
+    top: -15px;
     right: -50px;
     gap: 15px;
     font-size: 5em;
@@ -35,7 +35,7 @@
     & span:hover {
       filter: blur(0px);
       transition: 0s;
-      color: $main-color;
+      color: $white;
     }
   }
 
