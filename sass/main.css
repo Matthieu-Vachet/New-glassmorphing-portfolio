@@ -117,6 +117,11 @@ section.fade-out {
   z-index: 1;
   padding: 20px 0 0;
 }
+.header .toggle-color-select {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
 .header .nav-toggler {
   width: 50px;
   height: 50px;
@@ -1324,6 +1329,10 @@ section.dark {
   flex-wrap: wrap;
 }
 
+.rowToggler {
+  display: flex;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -1340,7 +1349,12 @@ section.dark {
   justify-content: flex-end;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .flex-space-between {
+  display: flex;
   justify-content: space-between;
 }
 
