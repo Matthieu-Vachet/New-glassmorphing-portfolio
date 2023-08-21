@@ -50,6 +50,22 @@
   box-shadow: $shadow-neumorphisme;
 }
 
+@mixin button-neumorphisme {
+  border-radius: 50px;
+  background: #404040;
+  box-shadow:  8px 8px 16px #363636,
+               -8px -8px 16px #4a4a4a;
+               transition: all 1s ease;
+}
+
+@mixin button-neumorphisme-hover {
+  border-radius: 50px;
+  background: #404040;
+  box-shadow: inset 8px 8px 16px #363636,
+              inset -8px -8px 16px #4a4a4a;
+              transition: all 1s ease;
+}
+
 @mixin background-neumorphisme-toggle {
   background-color: linear-gradient(45deg, #444444, #3a3a3a);
   background: linear-gradient(45deg, #444444, #3a3a3a);

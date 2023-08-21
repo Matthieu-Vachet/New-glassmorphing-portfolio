@@ -11,6 +11,18 @@ section {
     border: none;
     backdrop-filter: none;
   }
+  
+  & .btn.dark {
+    @include fontPoppins500(16px, $white);
+    @include button-neumorphisme;
+    border: none;
+  }
+
+
+  & .btn:hover.dark {
+    border: none;
+    @include button-neumorphisme-hover;
+  }
 }
 
 .header {
@@ -19,9 +31,30 @@ section {
     @include background-neumorphisme;
     backdrop-filter: none;
   }
+
+  & .nav-inner ul li.dark {
+    margin: 20px;
+  }
+
+  & .nav-inner ul li a.dark {
+    @include button-neumorphisme;
+    color: $white;
+  }
+
+  & .nav-inner ul li a:hover.dark {
+    @include button-neumorphisme-hover;
+    color: $secondary-color-dark;
+  }
+
   & .nav-toggler.dark {
     @include background-neumorphisme-toggle;
     border: none;
   }
 }
+
+img.dark {
+    @include button-neumorphisme;
+  }
+
+
 

@@ -12,8 +12,7 @@ button {
 .btn {
   @include fontPoppins500(16px, $main-color);
   line-height: 1.5;
-  background-color: $white-alpha-25;
-  border: 1px solid $white-alpha-40;
+  @include background-glassmorphing;
   padding: 10px 28px;
   display: inline-block;
   border-radius: 30px;
