@@ -14,7 +14,6 @@ const aboutText = document.querySelector(".about-text");
 const aboutTabs = document.querySelector(".about-tabs");
 
 //portfolio//
-const portfolioItemThumbnail = document.querySelector(".portfolio-item-thumbnail");
 const ppContent = document.querySelectorAll(".pp-content");
 
 //contact//
@@ -40,7 +39,6 @@ toggle.onclick = function () {
     aboutTabs.classList.toggle("dark");
 
     //portfolio//
-    portfolioItemThumbnail.classList.toggle("dark");
     ppContent.forEach(item => item.classList.toggle("dark"));
 
     //contact//
