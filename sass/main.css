@@ -552,8 +552,9 @@ section.fade-out {
 
 .portfolio-item-thumbnail {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: none;
   border-radius: 10px;
 }
 .portfolio-item-thumbnail img {
@@ -1075,6 +1076,9 @@ section.dark {
   border: none;
   transition: 1.5s;
 }
+#color-select.dark .colorToggle #color-select.dark .colorToggle.hide {
+  transform: rotate(360deg);
+}
 #color-select.dark .colorToggle.open ~ .menu-color {
   border: none;
   background-color: linear-gradient(315deg, #3a3a3a, #444444);
@@ -1171,7 +1175,8 @@ section.dark {
 .contact-form.dark .input-control::placeholder {
   color: #fffeff;
 }
-.contact-form.dark .social-links a {
+
+.social-links.dark a {
   border-radius: 50px;
   background: #404040;
   box-shadow: 8px 8px 16px #363636, -8px -8px 16px #4a4a4a;
@@ -1179,7 +1184,7 @@ section.dark {
   border: none;
   color: #fffeff;
 }
-.contact-form.dark .social-links a:hover {
+.social-links.dark a:hover {
   border-radius: 50px;
   background: #404040;
   box-shadow: inset 8px 8px 16px #363636, inset -8px -8px 16px #4a4a4a;
@@ -1240,7 +1245,7 @@ section.dark {
   border-radius: 70px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  transition: 1.5s;
+  transition: transform 1.5s;
 }
 #color-select .colorToggle.hide {
   transform: rotate(360deg);
@@ -1342,7 +1347,7 @@ section.dark {
 }
 
 .sec-padding {
-  padding: 80px 0;
+  padding: 110px 0;
 }
 
 .flex-end {

@@ -14,37 +14,38 @@ const aboutText = document.querySelector(".about-text");
 const aboutTabs = document.querySelector(".about-tabs");
 
 //portfolio//
+const portfolioItems = document.querySelectorAll(".portfolio-item");
 const ppContent = document.querySelectorAll(".pp-content");
 
 //contact//
 const contactForm = document.querySelector(".contact-form");
+const socialLinks = document.querySelector(".social-links");
 const contactInfo = document.querySelector(".contact-info");
 
-
-
-
 toggle.onclick = function () {
-    toggle.classList.toggle("dark");
-    body.classList.toggle("dark");
-    section.forEach(link => link.classList.toggle("dark"));
-    homeImg.classList.toggle("dark");
-    navToggler.classList.toggle("dark");
-    navTogglerSpan.classList.toggle("dark");
-    navInner.classList.toggle("dark");
-    btn.forEach(btn => btn.classList.toggle("dark"));
+  toggle.classList.toggle("dark");
+  body.classList.toggle("dark");
+  section.forEach((link) => link.classList.toggle("dark"));
+  homeImg.classList.toggle("dark");
+  navToggler.classList.toggle("dark");
+  navTogglerSpan.classList.toggle("dark");
+  navInner.classList.toggle("dark");
+  btn.forEach((btn) => btn.classList.toggle("dark"));
 
-    //about//
-    imgBox.classList.toggle("dark");
-    aboutText.classList.toggle("dark");
-    aboutTabs.classList.toggle("dark");
+  //about//
+  imgBox.classList.toggle("dark");
+  aboutText.classList.toggle("dark");
+  aboutTabs.classList.toggle("dark");
 
-    //portfolio//
-    ppContent.forEach(item => item.classList.toggle("dark"));
+  //portfolio//
+  portfolioItems.forEach((item) => item.classList.toggle("dark"));
+  ppContent.forEach((item) => item.classList.toggle("dark"));
 
-    //contact//
-    contactForm.classList.toggle("dark");
-    contactInfo.classList.toggle("dark");
+  //contact//
+  contactForm.classList.toggle("dark");
+  contactInfo.classList.toggle("dark");
+  socialLinks.classList.toggle("dark");
 
-    //Color Toggle//
-    colorsToggle.classList.toggle("dark");
+  //Color Toggle//
+  colorsToggle.classList.toggle("dark");
 };

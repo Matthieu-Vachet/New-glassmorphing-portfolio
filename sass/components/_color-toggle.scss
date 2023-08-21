@@ -16,7 +16,7 @@
     border-radius: 70px;
     border: 1px solid $white-alpha-40;
     cursor: pointer;
-    transition: 1.5s;
+    transition: transform 1.5s;
 
     &.hide {
       transform: rotate(360deg);
@@ -27,6 +27,7 @@
       top: 2px;
       color: $white;
       font-size: 2.1em;
+      
     }
   }
 

@@ -56,6 +56,10 @@ section {
   border: none;
   transition: 1.5s;
 
+  #color-select.dark .colorToggle.hide {
+    transform: rotate(360deg);
+  }
+
   &.open ~ .menu-color {
     @include background-neumorphisme;
   }
@@ -138,14 +142,15 @@ section {
     color: $white;
   }
 
-  & .social-links a {
-    @include button-neumorphisme;
-    border: none;
-    color: $white;
+}
 
-    &:hover {
-      @include button-neumorphisme-hover;
-    }
+.social-links.dark a {
+  @include button-neumorphisme;
+  border: none;
+  color: $white;
+
+  &:hover {
+    @include button-neumorphisme-hover;
   }
 }
 
