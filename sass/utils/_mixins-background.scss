@@ -27,20 +27,17 @@
 //
 
 @mixin background-main-dark {
-  background: #0f2027; /* fallback for old browsers */
+  background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
+    to bottom,
+    #434343,
+    #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
+    to bottom,
+    #434343,
+    #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  //   background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
 }
 
 @mixin background-neumorphisme {
@@ -53,17 +50,15 @@
 @mixin button-neumorphisme {
   border-radius: 50px;
   background: #404040;
-  box-shadow:  8px 8px 16px #363636,
-               -8px -8px 16px #4a4a4a;
-               transition: all 1s ease;
+  box-shadow: 8px 8px 16px #363636, -8px -8px 16px #4a4a4a;
+  transition: all 1s ease;
 }
 
 @mixin button-neumorphisme-hover {
   border-radius: 50px;
   background: #404040;
-  box-shadow: inset 8px 8px 16px #363636,
-              inset -8px -8px 16px #4a4a4a;
-              transition: all 1s ease;
+  box-shadow: inset 8px 8px 16px #363636, inset -8px -8px 16px #4a4a4a;
+  transition: all 1s ease;
 }
 
 @mixin background-neumorphisme-toggle {
