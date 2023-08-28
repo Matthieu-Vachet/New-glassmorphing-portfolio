@@ -15,13 +15,14 @@
   }
 
   & .circle-1 {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: $white-alpha-40;
+    border-radius: 73% 27% 90% 10% / 50% 55% 45% 50% ;
     left: 5%;
     top: 5%;
-    opacity: 0.3;
-    animation: zoomInOut 8s linear infinite;
+    // opacity: 0.3;
+    // animation: zoomInOut 8s linear infinite;
   }
 
   & .circle-2 {
