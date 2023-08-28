@@ -383,20 +383,73 @@ section.fade-out {
   margin: 0 15px 15px 0;
 }
 
-.home-img .img-box {
-  max-width: 360px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  border: 8px solid #fffeff;
-  margin: auto;
-  -webkit-clip-path: circle(40%);
-          clip-path: circle(40%);
+.container-img {
+  height: 400px;
+  width: 579px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.home-img .img-box img {
+
+.spin-container {
+  width: 350px;
+  height: 350px;
+  animation: spinborder 12s ease-in-out infinite alternate;
+  position: relative;
+}
+@keyframes spinborder {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.shape {
   width: 100%;
-  border-radius: 50%;
-  -webkit-clip-path: circle(40%);
-          clip-path: circle(40%);
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url(../assets/images/Matthieu.png);
+  background-size: 150%;
+  background-position: center center;
+  display: flex;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: spinborder 12s ease-in-out infinite alternate-reverse;
+  opacity: 1;
+  z-index: 2;
+}
+@keyframes spinborder {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 /* about section */
