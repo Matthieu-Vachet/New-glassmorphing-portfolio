@@ -26,13 +26,15 @@ async function loadJSON() {
 // Fonction pour générer le code HTML à partir des données JSON
 function generatePortfolioItems(data) {
   // Sélectionner l'élément HTML où vous souhaitez afficher les projets
-  const rowContainer = document.querySelector(".row-import"); // Sélectionnez la div avec la classe "row"
+  const rowContainer = document.querySelector(".row-import");
 
-  // Parcourir les données JSON et générer le code HTML correspondant
-  data.forEach((project) => {
-    // Créer les éléments HTML
-    const portfolioItem = document.createElement("div");
-    portfolioItem.classList.add("portfolio-item");
+  // Vérifier si les nouveaux éléments ont déjà été ajoutés
+  if (!elementsAdded) {
+    // Parcourir les données JSON et générer le code HTML correspondant
+    data.forEach((project) => {
+      // Créer les éléments HTML
+      const portfolioItem = document.createElement("div");
+      portfolioItem.classList.add("portfolio-item");
 
     const thumbnail = document.createElement("div");
     thumbnail.classList.add("portfolio-item-thumbnail");
@@ -103,22 +105,28 @@ function generatePortfolioItems(data) {
     portfolioItem.appendChild(details);
 
     rowContainer.appendChild(portfolioItem);
-  });
+    });
+
+    // Mettre à jour le drapeau pour indiquer que les nouveaux éléments ont été ajoutés
+    elementsAdded = true;
+  }
 }
 
 // charger les données JSON et générer le code HTML une fois qu'elles sont disponibles
+let elementsAdded = false;
+
 loadJSON().then((data) => {
   // Générer le code HTML à partir des données JSON
   generatePortfolioItems(data);
 
-    // Sélectionner tous les nouveaux éléments importés
-    const newElements = document.querySelectorAll(".portfolio-item");
+  // Sélectionner tous les nouveaux éléments importés
+  const newElements = document.querySelectorAll(".portfolio-item");
 
+  // Vérifier si le mode sombre est activé
+  if (isDarkMode) {
     // Ajouter la classe "dark" aux nouveaux éléments
     newElements.forEach((element) => {
       element.classList.add("dark");
     });
+  }
 });
-
-
-
