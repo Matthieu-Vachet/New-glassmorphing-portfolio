@@ -51,7 +51,7 @@ toggle.onclick = function () {
   section.forEach((link) => link.classList.toggle("dark"));
 
   // Toggle the "dark" class on home image element
-  homeImg.classList.toggle("dark");
+  // homeImg.classList.toggle("dark");
 
   // Toggle the "dark" class on nav toggler element
   navToggler.classList.toggle("dark");
@@ -66,7 +66,7 @@ toggle.onclick = function () {
   btn.forEach((btn) => btn.classList.toggle("dark"));
 
   // Toggle the "dark" class on about related elements
-  imgBox.classList.toggle("dark");
+  // imgBox.classList.toggle("dark");
   aboutText.classList.toggle("dark");
   aboutTabs.classList.toggle("dark");
 
